@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
+    <%- include('./partials/head.ejs')%>
 <body>
-    <nav>
-    <div class="site-title">
-        <a href="/">Confession 101</a>
-        <p>Confession blog</p>
-    </div>
-    <ul>
-        <li><a href="/">Blog</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog/create">New confession</a></li>
-    </ul>
-</nav>
+    <%- include('./partials/nav.ejs')%>
     <div class="create-blog content">
         <form>
-            <label>Confession title:</label>
+            <label>Title</label>
             <input type="text" id="title" required placeholder="Confession title">
-            <label>Confession snippet:</label>
+            <label>Snippet</label>
             <input type="text" id="snippet" required placeholder="Confession Snippet">
-            <label>Confession description:</label>
+            <label for="body">Description</label>
             <input type="text" id="body" required placeholder="Description">
             <button>Submit</button>
         </form>
     </div>
+    <%- include('./partials/footer.ejs')%>
 </body>
 </html>
