@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-    <%- include('./partials/head.ejs')%>
+    <%- include('../partials/head.ejs')%>
 <body>
-    <%- include('./partials/nav.ejs')%>
+    <%- include('../partials/nav.ejs')%>
   
     <div class="details content">
         <h2>
@@ -10,10 +10,12 @@
                 <div class="content">
                     <h3> <%= blog.body %></h3>
                 </div>
-                <a class="delete" data-doc="<%= blog._id %>" > delete</a>
+                <a class="delete" data-doc="<%= blog._id %>" style="height: 30px; width: 30px; margin-right: 90px;">
+                    <img src="/del-button.png" alt="delete icon"style="height: 30px; width: 30px;"  >
+                </a>
        
     </div>
-    <%- include('./partials/footer.ejs')%>
+    <%- include('../partials/footer.ejs')%>
     <script>
         const trashcan = document.querySelector('a.delete');
         trashcan.addEventListener('click', (e) =>{

@@ -22,19 +22,21 @@ nav{
     padding-bottom: 40px;
     border-bottom: 1px solid #ddd; 
     background-color: #154c79;
+    
 }
 nav ul{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
+    justify-content: center;
+    align-items: flex-end; 
     overflow: hidden;
+
 }
 nav li{
     list-style-type: none;
     margin-left: 20px;
     float: right; 
     font-size: 25px;
+    align-items: center;
 }
 nav h1{
     font-size: 3em;
