@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
     <%- include('./partials/head.ejs')%>
 <body>
     <%- include('./partials/nav.ejs')%>
     <div class="create-blog content">
-        <form>
+        <form action="/blogs" method="POST">
             <label>Title</label>
-            <input type="text" id="title" required placeholder="Confession title">
+            <input type="text" id="title" name="title" required placeholder="Confession title">
             <label>Snippet</label>
-            <input type="text" id="snippet" required placeholder="Confession Snippet">
+            <input type="text" id="snippet" name="snippet" required placeholder="Confession Snippet">
             <label for="body">Description</label>
-            <input type="textarea" id="body" required placeholder="Description">
+            <input type="textarea" id="body" required placeholder="Description" name="body">
             <button><i class="gg-add-r"></i></button>
         </form>
     </div>

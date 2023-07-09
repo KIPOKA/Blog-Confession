@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 
-const confessionShema = new Schema({
+const BlogSchema = new Schema({
     title:{
         type: String,
         required:true
@@ -19,6 +19,6 @@ const confessionShema = new Schema({
 }, {timestamps:true});
 
 
-const Confession = mongoose.model('Confession', confessionShema);
+const Blog = mongoose.model('Blog', BlogSchema);
 
-module.exports = Confession;
+module.exports = Blog;
